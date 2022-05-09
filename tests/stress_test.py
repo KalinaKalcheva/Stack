@@ -4,7 +4,7 @@ from urllib3 import Retry
 from timeit import default_timer
 from requests.adapters import HTTPAdapter
 BASE_URL = 'http://127.0.0.1:5000'
-MAX_ELEMENTS = 100000
+MAX_ELEMENTS = 10000000
 
 # Setting up retry adapter
 retry = Retry(connect=10, backoff_factor=0.5)
